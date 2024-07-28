@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove and Edit</title>
+</head>
+<body>
+    <div class="list">
+        <ul class="language">
+            <li id="1" name="1">Java</li>
+            <li id="2" name="2">Python</li>
+            <li id="3" name="3">Ruby</li>
+            <li id="4" name="4">JavaScript</li>
+        </ul>
+    </div>
+    <div>
+        <button onclick="removeButton()">Remove Element</button>
+    </div>
+</body>
+<script>
+
+ /*   // ADD Logic
+    function addListItem(language) {
+        const li = document.createElement('li');
+        li.innerHTML = `${language}`;
+        document.querySelector('.language').appendChild(li);
+    }
+
+    addListItem("Python");
+    addListItem("Go Lang");
+    addListItem("C Sharp");
+
+    //Edit Logic
+    const returnLi = document.querySelector('.language');
+    console.log(returnLi);
+    console.log(returnLi.children[1].innerHTML = "Pratham Language"); */
+
+    //Remove Logic
+    const removeElement = document.querySelector('.language');
+    
+    function removeButton() {
+        removeElement.children[0].remove();   
+    };
+
+
+</script>
+</html> 
